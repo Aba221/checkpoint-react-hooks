@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.film-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 4px 4px 6px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.film-card-column {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.film-card-column .film-card {
+  flex-basis: calc(25% - 40px); /* 25% moins la marge */
+  margin-right: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.film-card img {
+  max-width: 100%;
+  max-height: 50%;
+  height: auto;
+}
+
+.film-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.film-card p {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
