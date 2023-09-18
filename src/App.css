@@ -57,3 +57,19 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+/* Dans votre fichier CSS (App.css) */
+.retour-accueil {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #012536; /* Couleur de fond bleue */
+  color: #fff; /* Couleur du texte blanc */
+  text-decoration: none; /* Supprime le soulignement du lien */
+  border-radius: 5px; /* Coins arrondis */
+  font-weight: bold; /* Texte en gras */
+  margin-top: 20px; /* Marge supérieure */
+}
+
+.retour-accueil:hover {
+  background-color: #429bfa; /* Couleur de fond au survol */
+}
